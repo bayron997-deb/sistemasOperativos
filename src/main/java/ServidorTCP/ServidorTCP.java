@@ -48,7 +48,7 @@ public class ServidorTCP {
 
         } catch (Exception e) {
             //Mostrar error asociado
-            System.out.println(e.getMessage());
+            System.err.println(e.getMessage());
             //salir
             System.exit(1);
         }
