@@ -25,6 +25,7 @@ public class ServidorTCP {
 
         //Try-Catch para evitar posibles errores
         try {
+            //Dejamos el objeto en el puerto de comunicacion 60000 (tiene un amplio rango de puertos)
             newServer = new ServerSocket(60000);
         }catch (Exception e){
             //Mostrar error asociado
