@@ -1,6 +1,7 @@
 package ServidorTCP;
 
 import java.net.ServerSocket;
+import java.net.Socket;
 
 public class ServidorTCP {
     ///Atributos
@@ -8,6 +9,10 @@ public class ServidorTCP {
      * ServerSocket es un Objeto que nos permitirá hacer la comunicacion entre cliente-servidor
      */
     private ServerSocket newServer;
+    /**
+     * Socket nos permitira recibir/leer datos y para enviar/escribir datos
+     */
+    private Socket newSocket;
 
     /**
      * Metodo main que ejecutara el programa
@@ -27,6 +32,7 @@ public class ServidorTCP {
         try {
             //Dejamos el objeto en el puerto de comunicacion 60000 (tiene un amplio rango de puertos)
             newServer = new ServerSocket(60000);
+            
         }catch (Exception e){
             //Mostrar error asociado
             System.out.println(e.getMessage());
