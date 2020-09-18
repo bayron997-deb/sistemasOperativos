@@ -1,5 +1,7 @@
 package ServidorTCP;
 
+import GestorArchivo.GestorArchivos;
+
 import java.io.DataInputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -14,6 +16,11 @@ public class ServidorTCP {
      * Socket nos permitira recibir/leer datos y para enviar/escribir datos
      */
     private Socket newSocket;
+
+    /**
+     * Instanciamos clase GestorArchivo
+     */
+    private GestorArchivos ga = new GestorArchivos();
 
     //Constructor
     public ServidorTCP() {
