@@ -5,7 +5,7 @@ import ClienteTCP.ClienteTCP;
 public class Cliente {
     //Atributos
     /**
-     * Objeto de la clase Agenda para ejecutar ClienteTCP
+     * Objeto de la clase ClienteTCP
      */
     public static ClienteTCP cliente = new ClienteTCP();
 
