@@ -15,6 +15,10 @@ public class ServidorTCP {
      */
     private Socket newSocket;
 
+    //Constructor
+    public ServidorTCP() {
+    }
+
     /**
      * Metodo main que ejecutara el programa
      * @param args

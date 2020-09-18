@@ -21,6 +21,10 @@ public class ClienteTCP {
      * Escribir datos del tipo primitivo
      */
     private DataOutputStream newSalida;
+    
+    //Constructor
+    public ClienteTCP() {
+    }
 
     /**
      * Metodo para ejecutar cliente
