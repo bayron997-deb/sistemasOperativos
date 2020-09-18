@@ -32,7 +32,8 @@ public class ServidorTCP {
         try {
             //Dejamos el objeto en el puerto de comunicacion 60000 (tiene un amplio rango de puertos)
             newServer = new ServerSocket(60000);
-            
+            //Escucha para establecer una conexion a este socket
+            newSocket = newServer.accept();
         }catch (Exception e){
             //Mostrar error asociado
             System.out.println(e.getMessage());
