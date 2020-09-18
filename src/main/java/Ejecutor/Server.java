@@ -15,7 +15,7 @@ public class Server {
      */
     public static void main(String[] args) {
         //mensaje de bienvenida
-        System.out.println("Bienvenido cliente");
+        System.out.println("Bienvenido Servidor");
         server.servidorTCP();
     }
 }
