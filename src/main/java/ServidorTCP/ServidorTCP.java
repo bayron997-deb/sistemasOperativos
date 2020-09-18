@@ -37,6 +37,11 @@ public class ServidorTCP {
             newSocket = newServer.accept();
             //Leer y escribir datos en el socket
             DataInputStream newEntrada = new DataInputStream(newSocket.getInputStream());
+            //crear loop para mantener de manera infinita la comunicacion
+            while(true){
+                //mostrar cadena de cliente
+                System.out.println(newEntrada.readUTF());
+            }
         }catch (Exception e){
             //Mostrar error asociado
             System.out.println(e.getMessage());
