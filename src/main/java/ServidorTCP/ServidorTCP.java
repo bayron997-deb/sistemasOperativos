@@ -1,5 +1,6 @@
 package ServidorTCP;
 
+import java.io.DataInputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -34,6 +35,8 @@ public class ServidorTCP {
             newServer = new ServerSocket(60000);
             //Escucha para establecer una conexion a este socket
             newSocket = newServer.accept();
+            //Leer y escribir datos en el socket
+            DataInputStream newEntrada = new DataInputStream(newSocket.getInputStream());
         }catch (Exception e){
             //Mostrar error asociado
             System.out.println(e.getMessage());
