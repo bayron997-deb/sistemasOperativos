@@ -40,6 +40,7 @@ public class ClienteTCP {
             newSalida = new DataOutputStream(newSocket.getOutputStream());
             //Loop para leer datos
             while (true){
+                //Leer teclado y codificar en UTF
                 newSalida.writeUTF(String.valueOf(teclado.readLine()));
             }
         }catch (Exception e){
