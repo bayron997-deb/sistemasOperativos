@@ -3,6 +3,11 @@ package GestorArchivo;
 import java.io.*;
 
 public class GestorArchivos {
+    //Constructor
+
+    public GestorArchivos() {
+    }
+
     //Atributos
     /**
      * Escribir bytes en un fichero
@@ -23,7 +28,8 @@ public class GestorArchivos {
 
     /**
      * Metodo para escribir un archivo en binario
-     * @param ruta ruta que se le pasa al escribidor
+     * @param ruta
+     * @param contenido
      */
     public void escribirFichero(String ruta,String contenido){
         //crea un nuevo arhivo con nombre ruta
@@ -41,6 +47,5 @@ public class GestorArchivos {
         } catch (IOException e) {
             //errores
         }
-
     }
 }
