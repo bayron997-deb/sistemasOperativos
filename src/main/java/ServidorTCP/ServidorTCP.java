@@ -61,9 +61,6 @@ public class ServidorTCP {
                 contenido = String.valueOf(newEntrada.read());
                 //crea un archivo
                 ga.escribirFichero(ruta,contenido);
-                //
-                ruta = "";
-                contenido = "";
             }
 
         } catch (Exception e) {

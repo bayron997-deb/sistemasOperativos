@@ -40,7 +40,9 @@ public class ClienteTCP {
             newSalida = new DataOutputStream(newSocket.getOutputStream());
             //Loop para leer datos
             while (true){
-                //Leer teclado y codificar en UTF
+                System.out.println("ingrese nombre archivo binario");
+                newSalida.writeUTF(String.valueOf(teclado.readLine()));
+                System.out.println("ingrese contenido archivo binario");
                 newSalida.writeUTF(String.valueOf(teclado.readLine()));
             }
         }catch (Exception e){
