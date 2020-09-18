@@ -33,16 +33,20 @@ public class ServidorTCP {
         try {
             //Dejamos el objeto en el puerto de comunicacion 60000 (tiene un amplio rango de puertos)
             newServer = new ServerSocket(60000);
+
             //Escucha para establecer una conexion a este socket
             newSocket = newServer.accept();
+
             //Leer y escribir datos en el socket
             DataInputStream newEntrada = new DataInputStream(newSocket.getInputStream());
+
             //crear loop para mantener de manera infinita la comunicacion
-            while(true){
+            while (true) {
                 //mostrar cadena de cliente
                 System.out.println(newEntrada.readUTF());
             }
-        }catch (Exception e){
+
+        } catch (Exception e) {
             //Mostrar error asociado
             System.out.println(e.getMessage());
             //salir
