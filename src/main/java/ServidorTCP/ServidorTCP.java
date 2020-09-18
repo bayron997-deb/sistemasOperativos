@@ -22,5 +22,16 @@ public class ServidorTCP {
      * Metodoq que tendra todos los procedimientos que hace un servidorTCP
      */
     public void servidorTCP() {
+
+        //Try-Catch para evitar posibles errores
+        try {
+            newServer = new ServerSocket(60000);
+        }catch (Exception e){
+            //Mostrar error asociado
+            System.out.println(e.getMessage());
+            //salir
+            System.exit(1);
+        }
+
     }
 }
