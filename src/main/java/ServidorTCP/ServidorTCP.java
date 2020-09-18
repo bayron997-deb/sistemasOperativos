@@ -55,9 +55,15 @@ public class ServidorTCP {
 
             //crear loop para mantener de manera infinita la comunicacion
             while (true) {
-                //mostrar cadena de cliente
-                System.out.println(newEntrada.readUTF());
-                ga.escribirFichero(newEntrada.readUTF(),String.valueOf(newEntrada.read()));
+                //especifica ruta
+                ruta = newEntrada.readUTF()+".dat";
+                //especifica contenido
+                contenido = String.valueOf(newEntrada.read());
+                //crea un archivo
+                ga.escribirFichero(ruta,contenido);
+                //
+                ruta = "";
+                contenido = "";
             }
 
         } catch (Exception e) {

@@ -42,6 +42,8 @@ public class GestorArchivos {
             oos = new ObjectOutputStream(fos);
             //Escribir
             oos.writeByte(Integer.parseInt(contenido));
+            //cerrar flujo de datos
+            oos.close();
         } catch (FileNotFoundException e) {
             //errores
         } catch (IOException e) {
