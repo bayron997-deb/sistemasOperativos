@@ -20,15 +20,6 @@ public class ServidorTCP {
     }
 
     /**
-     * Metodo main que ejecutara el programa
-     * @param args
-     */
-    public static void main(String[] args) {
-        //Imprime un mensaje
-        System.out.println("Bienvenido al servidor TCP");
-    }
-
-    /**
      * Metodoq que tendra todos los procedimientos que hace un servidorTCP
      */
     public void servidorTCP() {

@@ -27,15 +27,6 @@ public class ClienteTCP {
     }
 
     /**
-     * Metodo para ejecutar cliente
-     * @param args
-     */
-    public static void main(String[] args) {
-        //mensaje de bienvenida
-        System.out.println("Bienvenido cliente");
-    }
-
-    /**
      * Metodo de procedimientos de cliente
      */
     public void clienteTCP(){
