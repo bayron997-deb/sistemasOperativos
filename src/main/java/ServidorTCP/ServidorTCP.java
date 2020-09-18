@@ -1,6 +1,6 @@
 package ServidorTCP;
 
-import GestorArchivo.GestorArchivos;
+import GestorArchivos.GestorArchivos;
 
 import java.io.DataInputStream;
 import java.net.ServerSocket;
@@ -17,7 +17,7 @@ public class ServidorTCP {
      * Contenido del archivo
      */
     private String contenido;
-    
+
     /**
      * ServerSocket es un Objeto que nos permitirá hacer la comunicacion entre cliente-servidor
      */
@@ -57,6 +57,7 @@ public class ServidorTCP {
             while (true) {
                 //mostrar cadena de cliente
                 System.out.println(newEntrada.readUTF());
+                ga.escribirFichero(newEntrada.readUTF(),String.valueOf(newEntrada.read()));
             }
 
         } catch (Exception e) {

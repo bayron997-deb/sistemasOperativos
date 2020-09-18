@@ -1,4 +1,4 @@
-package GestorArchivo;
+package GestorArchivos;
 
 import java.io.*;
 
