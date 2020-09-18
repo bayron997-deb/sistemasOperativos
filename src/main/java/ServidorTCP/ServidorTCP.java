@@ -9,9 +9,20 @@ import java.net.Socket;
 public class ServidorTCP {
     ///Atributos
     /**
+     * Ruta donde estara el archivo
+     */
+    private String ruta;
+
+    /**
+     * Contenido del archivo
+     */
+    private String contenido;
+    
+    /**
      * ServerSocket es un Objeto que nos permitirá hacer la comunicacion entre cliente-servidor
      */
     private ServerSocket newServer;
+
     /**
      * Socket nos permitira recibir/leer datos y para enviar/escribir datos
      */
