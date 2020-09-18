@@ -38,7 +38,10 @@ public class ClienteTCP {
             newSocket = new Socket("127.0.0.1",60000);
             //Vincular socket con salida para escribir y leer datos
             newSalida = new DataOutputStream(newSocket.getOutputStream());
-
+            //Loop para leer datos
+            while (true){
+                newSalida.writeUTF(String.valueOf(teclado.readLine()));
+            }
         }catch (Exception e){
             //Mostrar error asociado
             System.err.println(e.getMessage());
